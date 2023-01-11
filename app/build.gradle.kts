@@ -3,6 +3,8 @@ import io.easycontext.BlueprintBuildType
 plugins {
     id("easycontext.android.application")
     id("easycontext.android.application.compose")
+    id("easycontext.android.hilt")
+    alias(libs.plugins.junit5)
 }
 
 android {
@@ -33,11 +35,6 @@ android {
             excludes.add("/META-INF/{AL2.0,LGPL2.1}")
         }
     }
-    testOptions {
-        unitTests {
-            isIncludeAndroidResources = true
-        }
-    }
     namespace = "io.easycontext.blueprint"
 }
 
@@ -53,7 +50,13 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.testManifest)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
-    androidTestImplementation(kotlin("test"))
+
+    testImplementation(libs.junit5.api)
+    testRuntimeOnly(libs.junit5.engine)
+
+    androidTestImplementation(libs.androidx.test.ext)
+    androidTestImplementation(libs.androidx.test.espresso.core)
+    androidTestImplementation(libs.androidx.compose.ui.test)
 }
 
 // androidx.test is forcing JUnit, 4.12. This forces it to use 4.13
