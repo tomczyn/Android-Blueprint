@@ -1,7 +1,7 @@
 [versions]
 accompanist = "0.28.0"
 androidDesugarJdkLibs = "1.2.2"
-androidGradlePlugin = "7.3.1"
+androidGradlePlugin = "7.4.0"
 androidxActivity = "1.6.1"
 androidxAppCompat = "1.5.1"
 androidxBrowser = "1.4.0"
@@ -48,6 +48,7 @@ secrets = "2.0.1"
 turbine = "0.12.1"
 junit5 = "5.9.0"
 junit5-plugin = "1.8.2.1"
+timber = "5.0.1"
 
 [libraries]
 accompanist-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
@@ -122,6 +123,7 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
 
 # Dependencies of the included build-logic
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }

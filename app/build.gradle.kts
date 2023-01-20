@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 import io.easycontext.BlueprintBuildType
 
 plugins {
@@ -9,7 +11,7 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "com.easycontext.blueprint"
+        applicationId = "io.easycontext.blueprint"
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -50,6 +52,7 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.testManifest)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.timber)
 
     testImplementation(libs.junit5.api)
     testRuntimeOnly(libs.junit5.engine)
