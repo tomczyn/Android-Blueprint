@@ -12,8 +12,8 @@ plugins {
 android {
     defaultConfig {
         applicationId = "io.easycontext.blueprint"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = execCommand("git rev-list --count HEAD").toInt()
+        versionName = execCommand("git describe")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -27,7 +27,10 @@ android {
         val release by getting {
             isMinifyEnabled = true
             applicationIdSuffix = BlueprintBuildType.RELEASE.applicationIdSuffix
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
             signingConfig = signingConfigs.getByName("debug")
         }
     }
@@ -68,5 +71,26 @@ configurations.configureEach {
         force(libs.junit4)
         // Temporary workaround for https://issuetracker.google.com/174733673
         force("org.objenesis:objenesis:2.6")
+    }
+}
+
+tasks.whenTaskAdded {
+    if (name.contains("assemble")
+        && name.contains("Release")
+    ) {
+        dependsOn("checkReleaseVersion")
+    }
+}
+
+tasks.register("checkReleaseVersion") {
+    doLast {
+        val versionName = android.defaultConfig.versionName
+        if (versionName?.matches("\\d+(\\.\\d+)+".toRegex()) == false) {
+            throw GradleException(
+                "Version name for release builds can be only numeric (like 1.0.0), but was $versionName\n" +
+                        "Please use git tag to set version name on the current commit and try again\n" +
+                        "For example: git tag -a 1.0.0 -m 'tag message'"
+            )
+        }
     }
 }
