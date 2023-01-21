@@ -12,8 +12,8 @@ plugins {
 android {
     defaultConfig {
         applicationId = "io.easycontext.blueprint"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = execCommand("git rev-list --count HEAD").toInt()
+        versionName = execCommand("git describe")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -27,7 +27,10 @@ android {
         val release by getting {
             isMinifyEnabled = true
             applicationIdSuffix = BlueprintBuildType.RELEASE.applicationIdSuffix
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
             signingConfig = signingConfigs.getByName("debug")
         }
     }
