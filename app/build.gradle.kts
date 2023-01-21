@@ -73,3 +73,20 @@ configurations.configureEach {
         force("org.objenesis:objenesis:2.6")
     }
 }
+
+tasks.whenTaskAdded {
+    if (name.contains("assemble")
+        && name.contains("Release")
+    ) {
+        dependsOn("checkReleaseVersion")
+    }
+}
+
+tasks.register("checkReleaseVersion") {
+    doLast {
+        val versionName = android.defaultConfig.versionName
+        if (versionName?.matches("\\d+(\\.\\d+)+".toRegex()) == false) {
+            throw GradleException("Release version can be only numeric like 1.0.0, but was $versionName")
+        }
+    }
+}
