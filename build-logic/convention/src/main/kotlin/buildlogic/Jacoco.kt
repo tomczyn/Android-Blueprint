@@ -1,4 +1,4 @@
-package io.easycontext
+package buildlogic
 
 import com.android.build.api.variant.AndroidComponentsExtension
 import org.gradle.api.Project

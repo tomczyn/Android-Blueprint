@@ -18,7 +18,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "io.easycontext.buildlogic"
+group = "buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11
@@ -33,36 +33,36 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplicationCompose") {
-            id = "easycontext.android.application.compose"
-            implementationClass = "AndroidApplicationComposeConventionPlugin"
+            id = "android.application.compose"
+            implementationClass = "plugin.AndroidApplicationComposeConventionPlugin"
         }
         register("androidApplication") {
-            id = "easycontext.android.application"
-            implementationClass = "AndroidApplicationConventionPlugin"
+            id = "android.application"
+            implementationClass = "plugin.AndroidApplicationConventionPlugin"
         }
         register("androidApplicationJacoco") {
-            id = "easycontext.android.application.jacoco"
-            implementationClass = "AndroidApplicationJacocoConventionPlugin"
+            id = "android.application.jacoco"
+            implementationClass = "plugin.AndroidApplicationJacocoConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "easycontext.android.library.compose"
-            implementationClass = "AndroidLibraryComposeConventionPlugin"
+            id = "android.library.compose"
+            implementationClass = "plugin.AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "easycontext.android.library"
-            implementationClass = "AndroidLibraryConventionPlugin"
+            id = "android.library"
+            implementationClass = "plugin.AndroidLibraryConventionPlugin"
         }
         register("androidLibraryJacoco") {
-            id = "easycontext.android.library.jacoco"
-            implementationClass = "AndroidLibraryJacocoConventionPlugin"
+            id = "android.library.jacoco"
+            implementationClass = "plugin.AndroidLibraryJacocoConventionPlugin"
         }
         register("androidTest") {
-            id = "easycontext.android.test"
-            implementationClass = "AndroidTestConventionPlugin"
+            id = "android.test"
+            implementationClass = "plugin.AndroidTestConventionPlugin"
         }
         register("androidHilt") {
-            id = "easycontext.android.hilt"
-            implementationClass = "AndroidHiltConventionPlugin"
+            id = "android.hilt"
+            implementationClass = "plugin.AndroidHiltConventionPlugin"
         }
     }
 }

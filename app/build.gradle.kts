@@ -1,11 +1,9 @@
 @file:Suppress("UnstableApiUsage")
 
-import io.easycontext.BlueprintBuildType
-
 plugins {
-    id("easycontext.android.application")
-    id("easycontext.android.application.compose")
-    id("easycontext.android.hilt")
+    id("android.application")
+    id("android.application.compose")
+    id("android.hilt")
     alias(libs.plugins.junit5)
 }
 

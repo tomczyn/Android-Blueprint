@@ -16,7 +16,7 @@
 
 @file:Suppress("UnstableApiUsage")
 
-package io.easycontext
+package buildlogic
 
 import com.android.build.api.dsl.CommonExtension
 import org.gradle.api.Project
