@@ -12,9 +12,12 @@ enum class FlavorDimension {
 }
 
 @Suppress("EnumEntryName")
-enum class BlueprintFlavor(val dimension: FlavorDimension, val applicationIdSuffix: String? = null) {
-    dev(FlavorDimension.contentType),
-    prod(FlavorDimension.contentType, ".prod")
+enum class BlueprintFlavor(
+    val dimension: FlavorDimension,
+    val applicationIdSuffix: String? = null
+) {
+//    dev(FlavorDimension.contentType),
+//    prod(FlavorDimension.contentType, ".prod")
 }
 
 fun Project.configureFlavors(
