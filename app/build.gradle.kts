@@ -12,8 +12,8 @@ plugins {
 android {
     defaultConfig {
         applicationId = "io.easycontext.blueprint"
-        versionCode = execCommand("git rev-list --count HEAD").toInt()
-        versionName = execCommand("git describe")
+        versionCode = getVersionCode()
+        versionName = getVersionName()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
