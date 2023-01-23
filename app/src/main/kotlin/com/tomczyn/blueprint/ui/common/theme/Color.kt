@@ -1,4 +1,4 @@
-package io.easycontext.blueprint.ui.common.theme
+package com.tomczyn.blueprint.ui.common.theme
 
 import androidx.compose.ui.graphics.Color
 

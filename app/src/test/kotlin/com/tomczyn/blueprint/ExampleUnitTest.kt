@@ -1,4 +1,4 @@
-package io.easycontext.blueprint
+package com.tomczyn.blueprint
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test

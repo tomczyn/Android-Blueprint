@@ -9,7 +9,7 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "io.easycontext.blueprint"
+        applicationId = "com.tomczyn.blueprint"
         versionCode = getVersionCode()
         versionName = getVersionName()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -38,7 +38,7 @@ android {
             excludes.add("/META-INF/{AL2.0,LGPL2.1}")
         }
     }
-    namespace = "io.easycontext.blueprint"
+    namespace = "com.tomczyn.blueprint"
 }
 
 dependencies {
