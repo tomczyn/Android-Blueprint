@@ -49,6 +49,7 @@ turbine = "0.12.1"
 junit5 = "5.9.0"
 junit5-plugin = "1.8.2.1"
 timber = "5.0.1"
+ktlint = "11.0.0"
 
 [libraries]
 accompanist-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
@@ -140,3 +141,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
 junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5-plugin"}
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
