@@ -18,7 +18,7 @@ fun getVersionName(): String {
         ?: throw GradleException(
             "Unable to get version name.\n" +
                     "Make sure you have at least one annotated tag and git is initialized.\n" +
-                    "You can create an annotated tag with: git tag -a 1.0.0 -m \"1.0.0\""
+                    "You can create an annotated tag with: git tag -a 0.1 -m \"0.1\""
         )
 }
 

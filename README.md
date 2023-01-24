@@ -21,6 +21,19 @@ cd ApplicationName
 ./new_project.sh my.new.package ApplicationName
 ```
 
+##### App versioning
+Beware that app versioning uses git tags for version name. If you're starting new repository it's recommended to add at least one annotated tag. After runing `new_project.sh`, you can use below commands to configure git repository.
+```
+git init
+git add --all
+git commit -m 'init'
+git tag -a 0.1 -m '0.1'
+```
+##### Using Bitrise
+
+If you're using Bitrise CI/CD, remember to change `Fetch tags` option in `Git Clone Repository` step. Otherwise versioning won't be working in workflows.<br /><br />
+*Workflow > Git Clone Repository > Clone Config > Fetch tags > change from no to yes*
+
 ## License
 MIT License
 
