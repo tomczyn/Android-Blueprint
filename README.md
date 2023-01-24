@@ -13,10 +13,11 @@ This repo is heavily influenced by [NowInAndroid](https://github.com/android/now
 - JaCoCo
 
 ### Usage
-Use `new_project.sh` script to change package and app name.
+Use `new_project.sh` script to change package and app name.<br />
+Run below commands replacing `my.new.package` and `ApplicationName`.
 ```
-git clone https://github.com/tomczyn/Android-Blueprint.git
-cd Android-Blueprint
+git clone https://github.com/tomczyn/Android-Blueprint.git ApplicationName
+cd ApplicationName
 ./new_project.sh my.new.package ApplicationName
 ```
 
