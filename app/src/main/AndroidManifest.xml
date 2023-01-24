@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name="com.tomczyn.blueprint.BlueprintApp"
+        android:name="blueprint.BlueprintApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Blueprint"
         tools:targetApi="s">
         <activity
-            android:name="com.tomczyn.blueprint.MainActivity"
+            android:name="blueprint.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Blueprint">
             <intent-filter>

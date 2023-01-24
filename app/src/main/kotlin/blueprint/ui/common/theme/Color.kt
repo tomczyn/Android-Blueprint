@@ -1,4 +1,4 @@
-package com.tomczyn.blueprint.ui.common.theme
+package blueprint.ui.common.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.tomczyn.blueprint
+package blueprint
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

@@ -1,12 +1,12 @@
-package com.tomczyn.blueprint.ui.common
+package blueprint.ui.common
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.tomczyn.blueprint.ui.greeting.greetingGraph
-import com.tomczyn.blueprint.ui.greeting.greetingRoute
+import blueprint.ui.greeting.greetingGraph
+import blueprint.ui.greeting.greetingRoute
 
 @Composable
 fun BlueprintNavHost(

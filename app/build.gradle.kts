@@ -9,7 +9,7 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "com.tomczyn.blueprint"
+        applicationId = "blueprint"
         versionCode = getVersionCode()
         versionName = getVersionName()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -38,7 +38,7 @@ android {
             excludes.add("/META-INF/{AL2.0,LGPL2.1}")
         }
     }
-    namespace = "com.tomczyn.blueprint"
+    namespace = "blueprint"
 }
 
 dependencies {

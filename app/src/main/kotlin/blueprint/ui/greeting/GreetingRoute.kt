@@ -1,4 +1,4 @@
-package com.tomczyn.blueprint.ui.greeting
+package blueprint.ui.greeting
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
