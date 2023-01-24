@@ -52,5 +52,9 @@ echo "Cleaning up"
 find . -name "*.bak" -type f -delete
 rm -rf LICENSE README.md new_project.sh
 rm -rf .git/
+git init
+git add --all
+git commit -m 'init'
+git tag -a 0.1 -m 'v0.1'
 
 echo "Done!"

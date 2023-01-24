@@ -13,7 +13,7 @@ This repo is heavily influenced by [NowInAndroid](https://github.com/android/now
 - JaCoCo
 
 ### Usage
-Use `new_project.sh` script to change package and app name.<br />
+Use `new_project.sh` script to change package and app name. This script also initializes new repository with `init` commit and a version tag 0.1 for the app versioning to work properly.<br />
 Run below commands replacing `my.new.package` and `ApplicationName`.
 ```
 git clone https://github.com/tomczyn/Android-Blueprint.git ApplicationName
@@ -21,14 +21,6 @@ cd ApplicationName
 ./new_project.sh my.new.package ApplicationName
 ```
 
-##### App versioning
-Beware that app versioning uses git tags for version name. If you're starting new repository it's recommended to add at least one annotated tag. After runing `new_project.sh`, you can use below commands to configure git repository.
-```
-git init
-git add --all
-git commit -m 'init'
-git tag -a 0.1 -m '0.1'
-```
 ##### Using Bitrise
 
 If you're using Bitrise CI/CD, remember to change `Fetch tags` option in `Git Clone Repository` step. Otherwise versioning won't be working in workflows.<br /><br />
