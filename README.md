@@ -12,6 +12,13 @@ This repo is heavily influenced by [NowInAndroid](https://github.com/android/now
 - Ktlint
 - JaCoCo
 
+### Usage
+Use `new_project.sh` script to change package and app name.
+```
+git clone https://github.com/tomczyn/Android-Blueprint.git
+./new_project.sh my.new.package ApplicationName
+```
+
 ## License
 MIT License
 
