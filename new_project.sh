@@ -55,6 +55,6 @@ rm -rf .git/
 git init
 git add --all
 git commit -m 'init'
-git tag -a 0.1 -m 'v0.1'
+git tag -a 1.0 -m 'v1.0'
 
 echo "Done!"

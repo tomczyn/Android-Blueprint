@@ -1,55 +1,50 @@
 [versions]
-accompanist = "0.28.0"
-androidDesugarJdkLibs = "1.2.2"
-androidGradlePlugin = "7.4.1"
-androidxActivity = "1.6.1"
-androidxAppCompat = "1.5.1"
-androidxBrowser = "1.4.0"
-androidxComposeBom = "2022.12.00"
-androidxComposeCompiler = "1.4.0-alpha02"
-androidxComposeRuntimeTracing = "1.0.0-alpha01"
-androidxCore = "1.9.0"
-androidxCoreSplashscreen = "1.0.0"
-androidxDataStore = "1.0.0"
-androidxEspresso = "3.5.0"
-androidxHiltNavigationCompose = "1.0.0"
-androidxLifecycle = "2.6.0-alpha03"
-androidxMacroBenchmark = "1.1.1"
-androidxMetrics = "1.0.0-alpha03"
-androidxNavigation = "2.5.3"
-androidxProfileinstaller = "1.2.1"
-androidxStartup = "1.1.1"
-androidxTestCore = "1.5.0"
-androidxTestExt = "1.1.4"
-androidxTestRules = "1.5.0"
-androidxTestRunner = "1.5.1"
-androidxTracing = "1.1.0"
-androidxUiAutomator = "2.2.0"
-androidxWindowManager = "1.0.0"
-androidxWork = "2.7.1"
-coil = "2.2.2"
-hilt = "2.44.2"
-hiltExt = "1.0.0"
-jacoco = "0.8.7"
+accompanist = "0.28.0" # https://github.com/google/accompanist/releases
+androidDesugarJdkLibs = "2.0.2" # https://maven.google.com/web/index.html?q=desugar_jdk_libs#com.android.tools:desugar_jdk_libs
+androidGradlePlugin = "7.4.2" # https://maven.google.com/web/index.html?q=com.android.tools.build#com.android.tools.build:gradle
+androidxActivity = "1.6.1" # https://developer.android.com/jetpack/androidx/releases/activity
+androidxAppCompat = "1.6.1" # https://developer.android.com/jetpack/androidx/releases/appcompat
+androidxBrowser = "1.5.0" # https://developer.android.com/jetpack/androidx/releases/browser
+androidxComposeBom = "2023.01.00" # https://maven.google.com/web/index.html?q=compose-bom#androidx.compose:compose-bom
+androidxComposeCompiler = "1.4.3" # https://developer.android.com/jetpack/androidx/releases/compose
+androidxComposeRuntimeTracing = "1.0.0-alpha03" # https://developer.android.com/jetpack/androidx/releases/compose-runtime
+androidxCore = "1.9.0" # https://developer.android.com/jetpack/androidx/releases/core
+androidxCoreSplashscreen = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/core
+androidxDataStore = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/datastore
+androidxEspresso = "3.5.1" # https://maven.google.com/web/index.html?q=espresso-core#androidx.test.espresso:espresso-core
+androidxLifecycle = "2.6.0" # https://developer.android.com/jetpack/androidx/releases/lifecycle
+androidxMacroBenchmark = "1.1.1" # https://developer.android.com/jetpack/androidx/releases/benchmark
+androidxMetrics = "1.0.0-alpha03" # https://maven.google.com/web/index.html?q=metrics-per#androidx.metrics:metrics-performance
+androidxNavigation = "2.5.3" # https://developer.android.com/jetpack/androidx/releases/navigation
+androidxProfileinstaller = "1.2.1" # https://developer.android.com/jetpack/androidx/releases/profileinstaller
+androidxStartup = "1.1.1" # https://developer.android.com/jetpack/androidx/releases/startup
+androidxTestCore = "1.5.0" # https://maven.google.com/web/index.html?q=junit-ktx#androidx.test:core
+androidxTestExt = "1.1.5" # https://maven.google.com/web/index.html?q=junit-ktx#androidx.test.ext:junit-ktx
+androidxTestRules = "1.5.0" # https://maven.google.com/web/index.html?q=runner#androidx.test:rules
+androidxTestRunner = "1.5.2" # https://maven.google.com/web/index.html?q=runner#androidx.test:runner
+androidxTracing = "1.1.0" # https://developer.android.com/jetpack/androidx/releases/tracing
+androidxUiAutomator = "2.2.2" # https://maven.google.com/web/index.html?q=uiautomator#androidx.test.uiautomator:uiautomator
+androidxWindowManager = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/window
+androidxWork = "2.8.0" # https://developer.android.com/jetpack/androidx/releases/work
+coil = "2.2.2" # https://github.com/coil-kt/coil/releases
+hilt = "2.45" # https://github.com/google/dagger/releases
+androidxHiltNavigationCompose = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/hilt
+hiltExt = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/hilt
+jacoco = "0.8.8" # https://github.com/jacoco/jacoco/releases
 junit4 = "4.13.2"
-kotlin = "1.7.21"
-kotlinxCoroutines = "1.6.4"
-kotlinxDatetime = "0.4.0"
-kotlinxSerializationJson = "1.4.1"
-ksp = "1.7.21-1.0.8"
-lint = "30.3.1"
-okhttp = "4.10.0"
-protobuf = "3.21.12"
-protobufPlugin = "0.8.19"
-retrofit = "2.9.0"
-retrofitKotlinxSerializationJson = "0.8.0"
-room = "2.5.0-rc01"
-secrets = "2.0.1"
-turbine = "0.12.1"
-junit5 = "5.9.0"
-junit5-plugin = "1.8.2.1"
-timber = "5.0.1"
-ktlint = "11.0.0"
+kotlin = "1.8.10" # https://github.com/JetBrains/kotlin/releases
+kotlinxCoroutines = "1.6.4" # https://github.com/Kotlin/kotlinx.coroutines/releases
+kotlinxDatetime = "0.4.0" # https://github.com/Kotlin/kotlinx-datetime/releases
+kotlinxSerializationJson = "1.5.0" # https://github.com/Kotlin/kotlinx.serialization/releases
+ksp = "1.8.20-RC-1.0.9" # https://github.com/google/ksp/releases
+lint = "30.3.1" # https://maven.google.com/web/index.html?q=com.android.tools.lint#com.android.tools.lint:lint-api
+room = "2.5.0" # https://developer.android.com/jetpack/androidx/releases/room
+secrets = "2.0.1" # https://github.com/google/secrets-gradle-plugin/releases
+turbine = "0.12.1" # https://github.com/cashapp/turbine/releases
+junit5 = "5.9.2" # https://github.com/junit-team/junit5/releases
+junit5-plugin = "1.8.2.1" # https://github.com/mannodermaus/android-junit5/releases
+timber = "5.0.1" # https://github.com/JakeWharton/timber/releases
+ktlint = "11.3.1" # https://github.com/JLLeitschuh/ktlint-gradle/releases
 
 [libraries]
 accompanist-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
@@ -93,7 +88,7 @@ androidx-test-ext = { group = "androidx.test.ext", name = "junit-ktx", version.r
 androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
 androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
 androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "androidxUiAutomator" }
-androidx-tracing-ktx = { group = "androidx.tracing", name="tracing-ktx", version.ref = "androidxTracing" }
+androidx-tracing-ktx = { group = "androidx.tracing", name = "tracing-ktx", version.ref = "androidxTracing" }
 androidx-window-manager = { module = "androidx.window:window", version.ref = "androidxWindowManager" }
 androidx-work-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "androidxWork" }
 androidx-work-testing = { group = "androidx.work", name = "work-testing", version.ref = "androidxWork" }
@@ -115,11 +110,6 @@ kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-cor
 kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = "lint" }
-okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
-protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
-protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
-retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
@@ -138,7 +128,6 @@ hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
-junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5-plugin"}
+junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5-plugin" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
