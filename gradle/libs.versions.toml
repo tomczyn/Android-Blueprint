@@ -27,12 +27,12 @@ androidxUiAutomator = "2.2.2" # https://maven.google.com/web/index.html?q=uiauto
 androidxWindowManager = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/window
 androidxWork = "2.8.1" # https://developer.android.com/jetpack/androidx/releases/work
 coil = "2.2.2" # https://github.com/coil-kt/coil/releases
-hilt = "2.45" # https://github.com/google/dagger/releases
+hilt = "2.46" # https://github.com/google/dagger/releases
 androidxHiltNavigationCompose = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/hilt
 hiltExt = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/hilt
 jacoco = "0.8.8" # https://github.com/jacoco/jacoco/releases
 junit4 = "4.13.2"
-kotlin = "1.8.20" # https://github.com/JetBrains/kotlin/releases
+kotlin = "1.8.10" # https://github.com/JetBrains/kotlin/releases
 kotlinxCoroutines = "1.6.4" # https://github.com/Kotlin/kotlinx.coroutines/releases
 kotlinxDatetime = "0.4.0" # https://github.com/Kotlin/kotlinx-datetime/releases
 kotlinxSerializationJson = "1.5.0" # https://github.com/Kotlin/kotlinx.serialization/releases

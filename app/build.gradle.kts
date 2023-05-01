@@ -1,4 +1,4 @@
-@file:Suppress("UnstableApiUsage")
+@file:Suppress("UnstableApiUsage", "UNUSED_VARIABLE")
 
 plugins {
     id("android.application")
@@ -16,6 +16,10 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {
