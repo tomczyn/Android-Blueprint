@@ -6,7 +6,7 @@ androidxActivity = "1.7.1" # https://developer.android.com/jetpack/androidx/rele
 androidxAppCompat = "1.6.1" # https://developer.android.com/jetpack/androidx/releases/appcompat
 androidxBrowser = "1.5.0" # https://developer.android.com/jetpack/androidx/releases/browser
 androidxComposeBom = "2023.04.01" # https://maven.google.com/web/index.html?q=compose-bom#androidx.compose:compose-bom
-androidxComposeCompiler = "1.4.3" # https://developer.android.com/jetpack/androidx/releases/compose
+androidxComposeCompiler = "1.4.6" # https://developer.android.com/jetpack/androidx/releases/compose
 androidxComposeRuntimeTracing = "1.0.0-alpha03" # https://developer.android.com/jetpack/androidx/releases/compose-runtime
 androidxCore = "1.10.0" # https://developer.android.com/jetpack/androidx/releases/core
 androidxCoreSplashscreen = "1.0.1" # https://developer.android.com/jetpack/androidx/releases/core
@@ -32,7 +32,7 @@ androidxHiltNavigationCompose = "1.0.0" # https://developer.android.com/jetpack/
 hiltExt = "1.0.0" # https://developer.android.com/jetpack/androidx/releases/hilt
 jacoco = "0.8.8" # https://github.com/jacoco/jacoco/releases
 junit4 = "4.13.2"
-kotlin = "1.8.10" # https://github.com/JetBrains/kotlin/releases
+kotlin = "1.8.20" # https://github.com/JetBrains/kotlin/releases
 kotlinxCoroutines = "1.6.4" # https://github.com/Kotlin/kotlinx.coroutines/releases
 kotlinxDatetime = "0.4.0" # https://github.com/Kotlin/kotlinx-datetime/releases
 kotlinxSerializationJson = "1.5.0" # https://github.com/Kotlin/kotlinx.serialization/releases
