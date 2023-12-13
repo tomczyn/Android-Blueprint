@@ -19,7 +19,7 @@ enum class BlueprintFlavor(
 }
 
 fun Project.configureFlavors(
-    commonExtension: CommonExtension<*, *, *, *>,
+    commonExtension: CommonExtension<*, *, *, *, *>,
     flavorConfigurationBlock: ProductFlavor.(flavor: BlueprintFlavor) -> Unit = {}
 ) {
     commonExtension.apply {

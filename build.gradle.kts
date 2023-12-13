@@ -17,8 +17,4 @@ plugins {
 
 subprojects {
     apply(plugin = rootProject.libs.plugins.ktlint.get().pluginId)
-
-    repositories {
-        mavenCentral()
-    }
 }

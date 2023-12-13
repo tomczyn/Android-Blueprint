@@ -1,5 +1,6 @@
 package plugin
 
+import AndroidConfig
 import configureFlavors
 import buildlogic.configureKotlinAndroid
 import buildlogic.configurePrintApksTask
@@ -19,7 +20,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
 
             extensions.configure<ApplicationExtension> {
                 configureKotlinAndroid(this)
-                defaultConfig.targetSdk = 33
+                defaultConfig.targetSdk = AndroidConfig.targetSdk
                 configureFlavors(this)
             }
             extensions.configure<ApplicationAndroidComponentsExtension> {

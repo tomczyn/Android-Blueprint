@@ -1,5 +1,6 @@
 package plugin
 
+import AndroidConfig
 import buildlogic.configureKotlinAndroid
 import com.android.build.gradle.TestExtension
 import org.gradle.api.Plugin
@@ -16,7 +17,7 @@ class AndroidTestConventionPlugin : Plugin<Project> {
 
             extensions.configure<TestExtension> {
                 configureKotlinAndroid(this)
-                defaultConfig.targetSdk = 33
+                defaultConfig.targetSdk = AndroidConfig.targetSdk
             }
         }
     }
