@@ -1,8 +1,6 @@
 package blueprint.ui.common
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.WindowInsets
@@ -11,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -28,8 +27,9 @@ fun AppScreen(
     color: Color = MaterialTheme.colorScheme.background,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    Box(
-        modifier = modifier.background(color)
+    Surface(
+        modifier = modifier,
+        color = color
     ) {
         Column(
             Modifier
