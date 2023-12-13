@@ -29,7 +29,7 @@ If you're using Bitrise CI/CD, remember to change `Fetch tags` option in `Git Cl
 ## License
 MIT License
 
-Copyright (c) 2023 Maciek Tomczyński
+Copyright (c) 2023 Maciej Tomczyński
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
