@@ -1,6 +1,5 @@
 package blueprint.ui.greeting
 
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
@@ -16,7 +15,7 @@ fun GreetingScreen() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!", color = MaterialTheme.colorScheme.onBackground)
+    Text(text = "Hello $name!")
 }
 
 @Preview(showBackground = true)
